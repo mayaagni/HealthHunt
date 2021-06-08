@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8319865425340056835}
   - component: {fileID: 5947598712630272754}
   - component: {fileID: 4007218236319395564}
+  - component: {fileID: 5756295459994451272}
   m_Layer: 0
   m_Name: fries
   m_TagString: Junk
@@ -139,3 +140,18 @@ PolygonCollider2D:
       - {x: 0.11075844, y: -0.1200857}
       - {x: 0.12711515, y: -0.024486475}
       - {x: 0.14237155, y: 0.09812951}
+--- !u!114 &5756295459994451272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7848184124673428822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6449284164caca418ee09cfb38c0977, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.5
+  rotationSpeed: 5
+  lifeTime: 10

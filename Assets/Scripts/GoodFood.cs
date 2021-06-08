@@ -6,8 +6,8 @@ public class GoodFood : MonoBehaviour
 {
 
     Vector2 direction = new Vector2();
-    public float speed;
-    public float rotationSpeed;
+    public float speed = 1.5f;
+    public float rotationSpeed = 5;
 
     //how long food lives before it is automatically destroyed
     public float lifeTime = 10;

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8699471756332811245}
   - component: {fileID: 9207816299830240549}
   - component: {fileID: 1234805073260874953}
+  - component: {fileID: 2480431346915398454}
   m_Layer: 0
   m_Name: donuts
   m_TagString: Junk
@@ -99,7 +100,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -139,3 +140,18 @@ PolygonCollider2D:
       - {x: 0.13874353, y: -0.07728254}
       - {x: 0.14, y: 0.06869252}
       - {x: -0.0026666839, y: 0.1398975}
+--- !u!114 &2480431346915398454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899230349792738844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6449284164caca418ee09cfb38c0977, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.5
+  rotationSpeed: 5
+  lifeTime: 10

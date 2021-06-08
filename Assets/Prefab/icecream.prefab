@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3925846647958326462}
   - component: {fileID: 458244361276825657}
   - component: {fileID: 8892547575121697800}
+  - component: {fileID: 2346698257088963778}
   m_Layer: 0
   m_Name: icecream
   m_TagString: Junk
@@ -142,3 +143,18 @@ PolygonCollider2D:
       - {x: 0.0871253, y: 0.04992032}
       - {x: 0.05764482, y: 0.1065802}
       - {x: -0.022780478, y: 0.15077497}
+--- !u!114 &2346698257088963778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724491804584370031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6449284164caca418ee09cfb38c0977, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.5
+  rotationSpeed: 5
+  lifeTime: 10
