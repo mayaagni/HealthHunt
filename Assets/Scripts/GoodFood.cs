@@ -4,15 +4,40 @@ using UnityEngine;
 
 public class GoodFood : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    Vector2 direction = new Vector2();
+    public float speed;
+    public float rotationSpeed;
+
+    //how long food lives before it is automatically destroyed
+    public float lifeTime = 10;
+  
     void Start()
     {
+        direction = new Vector2(0, -1);
+        //normalize direction so travel speed it not impacted
+        direction.Normalize();
         
     }
 
-    // Update is called once per frame
+    //fruit moves downward
     void Update()
     {
-        
+        transform.position = transform.position + new Vector3(direction.x, direction.y, 0) * speed * Time.deltaTime;
+        transform.rotation *= Quaternion.AngleAxis(rotationSpeed * Time.deltaTime, Vector3.forward);
+
+        lifeTime -= Time.deltaTime;
+        if(lifeTime <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

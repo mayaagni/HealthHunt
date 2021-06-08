@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7071525006100881719}
   - component: {fileID: 6246409247784139474}
   - component: {fileID: 6192082812967552977}
-  - component: {fileID: 5593409471517691596}
+  - component: {fileID: 6662296499103367271}
   m_Layer: 0
   m_Name: orange
   m_TagString: Fruit
@@ -105,8 +105,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &5593409471517691596
-CircleCollider2D:
+--- !u!60 &6662296499103367271
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -118,6 +118,23 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.006731495, y: 0.030834345}
-  serializedVersion: 2
-  m_Radius: 0.14884408
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0.03, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.3, y: 0.31}
+    newSize: {x: 0.29, y: 0.33}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.0789034, y: 0.15808974}
+      - {x: -0.1554113, y: 0.086375386}
+      - {x: -0.15573378, y: -0.054666772}
+      - {x: -0.08757135, y: -0.13800645}
+      - {x: 0.060370587, y: -0.13337184}
+      - {x: 0.14082634, y: -0.028570607}
+      - {x: 0.14197299, y: 0.06621167}
+      - {x: 0.0589035, y: 0.155}

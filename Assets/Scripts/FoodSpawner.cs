@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BadFood : MonoBehaviour
+public class FoodSpawner : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()

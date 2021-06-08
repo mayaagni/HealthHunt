@@ -322,12 +322,12 @@ TextureImporter:
       name: carrots
       rect:
         serializedVersion: 2
-        x: 288
-        y: 254
-        width: 31
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 287
+        y: 256
+        width: 32
+        height: 33
+      alignment: 9
+      pivot: {x: 0.52001953, y: 0.40293375}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -595,10 +595,10 @@ TextureImporter:
       name: cheese
       rect:
         serializedVersion: 2
-        x: 223
+        x: 224
         y: 191
-        width: 32
-        height: 36
+        width: 31
+        height: 31
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
