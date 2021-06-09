@@ -805,28 +805,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4844247405304890751, guid: 8c7511f3d4e14f9468a15740e0cd7d8e, type: 3}
       propertyPath: walking.Array.size
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4844247405304890751, guid: 8c7511f3d4e14f9468a15740e0cd7d8e, type: 3}
       propertyPath: walking.Array.data[0]
       value: 
-      objectReference: {fileID: 8510366514237771793, guid: 3b670cba36d4d42c8a86bb61b25c2234, type: 3}
+      objectReference: {fileID: -672613427380782924, guid: 3b670cba36d4d42c8a86bb61b25c2234, type: 3}
     - target: {fileID: 4844247405304890751, guid: 8c7511f3d4e14f9468a15740e0cd7d8e, type: 3}
       propertyPath: walking.Array.data[1]
       value: 
-      objectReference: {fileID: -672613427380782924, guid: 3b670cba36d4d42c8a86bb61b25c2234, type: 3}
+      objectReference: {fileID: -7986789964526003834, guid: 3b670cba36d4d42c8a86bb61b25c2234, type: 3}
     - target: {fileID: 4844247405304890751, guid: 8c7511f3d4e14f9468a15740e0cd7d8e, type: 3}
       propertyPath: walking.Array.data[2]
       value: 
-      objectReference: {fileID: -7986789964526003834, guid: 3b670cba36d4d42c8a86bb61b25c2234, type: 3}
+      objectReference: {fileID: 2261381518080917408, guid: 3b670cba36d4d42c8a86bb61b25c2234, type: 3}
     - target: {fileID: 4844247405304890751, guid: 8c7511f3d4e14f9468a15740e0cd7d8e, type: 3}
       propertyPath: walking.Array.data[3]
       value: 
-      objectReference: {fileID: 2261381518080917408, guid: 3b670cba36d4d42c8a86bb61b25c2234, type: 3}
+      objectReference: {fileID: 7976537246092462636, guid: 3b670cba36d4d42c8a86bb61b25c2234, type: 3}
     - target: {fileID: 4844247405304890751, guid: 8c7511f3d4e14f9468a15740e0cd7d8e, type: 3}
       propertyPath: walking.Array.data[4]
       value: 
-      objectReference: {fileID: 7976537246092462636, guid: 3b670cba36d4d42c8a86bb61b25c2234, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 5659862740526917101, guid: 8c7511f3d4e14f9468a15740e0cd7d8e, type: 3}
       propertyPath: m_Name
       value: Chef(1)
