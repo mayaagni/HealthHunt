@@ -24,10 +24,23 @@ public class Player : MonoBehaviour
     private float fruitScore = 0;
     private float junkScore = 0;
 
+    [HeaderAttribute("Animations")]
+    public Sprite[] walking;
+    private SpriteRenderer spriteRenderer;
+    private Rigidbody2D rBody2D;
+    private int index = 0;
+    //frames per second
+    public float animationFPS;
+    //controlls speed of walking animation
+    private float frameTimer = 0;
+    
+  
+
     void Start()
     {
-     
 
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        rBody2D = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -37,6 +50,29 @@ public class Player : MonoBehaviour
 
         // move the player left and right, depending on the horizontal input
         transform.position += Vector3.right * Input.GetAxis("Horizontal") * speed * Time.deltaTime;
+
+        //walking animation logic
+        Vector2 vel = rBody2D.velocity;
+        vel.x = Input.GetAxis("Horizontal") * speed;
+        if(vel.x > 0 || vel.x < 0)
+        {
+            frameTimer -= Time.deltaTime;
+            if (frameTimer <= 0.0f)
+            {
+                frameTimer = 1 / animationFPS;
+                index %= walking.Length;
+                spriteRenderer.sprite = walking[index];
+                index++;
+            }
+            if(vel.x < -0.01f)
+            {
+                spriteRenderer.flipX = true;
+            } else if (vel.x > 0.01f)
+            {
+                spriteRenderer.flipX = false;
+            }
+        }
+       
     }
 
     void OnCollisionEnter2D(Collision2D col)
