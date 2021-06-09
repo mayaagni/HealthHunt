@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &782699349289378297
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 782699349289378279}
+  - component: {fileID: 782699349289378278}
+  m_Layer: 0
+  m_Name: FoodSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &782699349289378279
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782699349289378297}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.06, y: 5.21, z: -1.4850583}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &782699349289378278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782699349289378297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26090fa242a384cf6a1898d741fc4525, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  food:
+  - {fileID: 2285158269302167517, guid: c0129acfd9cea4c799017681be81b0be, type: 3}
+  - {fileID: 9106591799164303017, guid: 406d8a4083b59476e9f5baed7830c758, type: 3}
+  - {fileID: 3624900594987020698, guid: dfcdb67ff0da44708976ccfc2326a4cf, type: 3}
+  - {fileID: 1015767692789570994, guid: a49c39d9dc0554c45971cf87175d5802, type: 3}
+  - {fileID: 3292243178421164264, guid: 14044e589f5be494cacb9c49776cc655, type: 3}
+  - {fileID: 2666152893632585957, guid: dd9b91a44277b4b05b20be488676fb72, type: 3}
+  - {fileID: 1899230349792738844, guid: f9874b214f14a4a1f8cebc3b806d5eed, type: 3}
+  - {fileID: 7848184124673428822, guid: e2687a4abb1cc481885c0b038e18aef8, type: 3}
+  - {fileID: 724491804584370031, guid: 0a3168d135be346219157db29ec189dc, type: 3}
+  - {fileID: 7286484699741556376, guid: c904e40ca1a6e4e268b50bb14e6d5b37, type: 3}
+  - {fileID: 7426218241296312683, guid: e47a7760022af4daaa6bf594d7fbcf14, type: 3}
+  - {fileID: 5462108774402465005, guid: bfd43acc1865d4ca5a9711fa1fd109f1, type: 3}
+  - {fileID: 4658707936957430489, guid: 5ccbfb18f4d4b45cd8977b6cb849a072, type: 3}
+  spawnRate: 0.75
+  spawnWidth: 6.2
