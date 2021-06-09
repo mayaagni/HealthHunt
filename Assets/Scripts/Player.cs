@@ -35,6 +35,11 @@ public class Player : MonoBehaviour
     //controlls speed of walking animation
     private float frameTimer = 0;
 
+    public float lifeTime = 3;
+    
+  
+
+
     //hearts for ui
     public GameObject heart;
     public GameObject heart1;
@@ -111,7 +116,6 @@ public class Player : MonoBehaviour
                 spriteRenderer.flipX = false;
             }
         }
-       
     }
 
     void OnCollisionEnter2D(Collision2D col)
@@ -124,8 +128,11 @@ public class Player : MonoBehaviour
             {
                 speed = speed + .5f;
             }
+            Instantiate(star, transform.position, Quaternion.identity);
+       
+            // load the active scene again, to restard the game. The GameManager will handle this for us. We use a slight delay to see the explosion.
             
-            
+
         }
         if (col.gameObject.CompareTag("Fruit"))
         {
@@ -135,6 +142,11 @@ public class Player : MonoBehaviour
             {
                 speed = speed + .5f;
             }
+            Instantiate(star, transform.position, Quaternion.identity);
+              Destroy(star);
+
+            // load the active scene again, to restard the game. The GameManager will handle this for us. We use a slight delay to see the explosion.
+
             
           
         }
@@ -143,13 +155,13 @@ public class Player : MonoBehaviour
             junkScore++;
             Instantiate(x, transform.position, Quaternion.identity);
             //decrese speed when player consumes junk food
-            if (speed > .3)
+            if (speed > 1)
             {
                 speed = speed - .5f;
             }
+            Instantiate(x, transform.position, Quaternion.identity);
            
             
            
-        }
     }
 }
