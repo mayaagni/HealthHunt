@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -20,9 +21,9 @@ public class Player : MonoBehaviour
     //x appears when junk eaten
     public GameObject x;
 
-    private float vegScore = 0;
-    private float fruitScore = 0;
-    private float junkScore = 0;
+    public static float vegScore;
+    public static float fruitScore;
+    public static float junkScore;
 
     [HeaderAttribute("Animations")]
     public Sprite[] walking;
@@ -41,12 +42,26 @@ public class Player : MonoBehaviour
 
         spriteRenderer = GetComponent<SpriteRenderer>();
         rBody2D = GetComponent<Rigidbody2D>();
+        vegScore = 0;
+        fruitScore = 0;
+        junkScore = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (isDead) return;
+        
+        if (junkScore >= 5)
+        {
+            isDead = true;
+            SceneManager.LoadScene("EndScene");
+            Destroy(GetComponent<SpriteRenderer>());
+        }
+        if (isDead)
+        {
+
+            return;
+        }
 
         // move the player left and right, depending on the horizontal input
         transform.position += Vector3.right * Input.GetAxis("Horizontal") * speed * Time.deltaTime;
@@ -79,37 +94,38 @@ public class Player : MonoBehaviour
     {
        if (col.gameObject.CompareTag("Vegetable"))
         {
-            if(speed <= 5)
+            vegScore++;
+            if (speed <= 7)
             {
-                speed = speed + .3f;
+                speed = speed + .5f;
             }
             Instantiate(star, transform.position, Quaternion.identity);
             // load the active scene again, to restard the game. The GameManager will handle this for us. We use a slight delay to see the explosion.
-            vegScore++;
+            
         }
         if (col.gameObject.CompareTag("Fruit"))
         {
-            if(speed <= 5)
+            fruitScore++;
+            if (speed <= 7)
             {
-                speed = speed + .3f;
+                speed = speed + .5f;
             }
             Instantiate(star, transform.position, Quaternion.identity);
             // load the active scene again, to restard the game. The GameManager will handle this for us. We use a slight delay to see the explosion.
-            fruitScore++;
+            
         }
         if (col.gameObject.CompareTag("Junk"))
         {
+            junkScore++;
             //decrese speed when player consumes junk food
-            speed = speed - .3f;
+            if (speed > .3)
+            {
+                speed = speed - .5f;
+            }
             Instantiate(x, transform.position, Quaternion.identity);
             // load the active scene again, to restard the game. The GameManager will handle this for us. We use a slight delay to see the explosion.
-            junkScore++;
-            if(junkScore >=4)
-            {
-                isDead = true;
-                Destroy(GetComponent<SpriteRenderer>());
-                
-            }
+            
+           
         }
     }
 }
