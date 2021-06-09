@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2920508583204612590}
   - component: {fileID: 9125401354202289658}
   - component: {fileID: 8345949935284813362}
+  - component: {fileID: -8882854949506801830}
   m_Layer: 0
   m_Name: strawberry
   m_TagString: Fruit
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 4658707936957430489}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.0866, y: -0.036, z: 0}
-  m_LocalScale: {x: 4.8285, y: 4.7819, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -135,9 +136,24 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-8882854949506801830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4658707936957430489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6449284164caca418ee09cfb38c0977, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.5
+  rotationSpeed: 5
+  lifeTime: 10

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6966996450390696995}
   - component: {fileID: 9161644438580990185}
   - component: {fileID: 958626623986500771}
+  - component: {fileID: -7987696734104737743}
   m_Layer: 0
   m_Name: cookie
   m_TagString: Junk
@@ -134,9 +135,24 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-7987696734104737743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2666152893632585957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6449284164caca418ee09cfb38c0977, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.5
+  rotationSpeed: 5
+  lifeTime: 10

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3607864627652820376}
   - component: {fileID: 2436997237558101555}
   - component: {fileID: 6395771958103700360}
+  - component: {fileID: 2481726480862255631}
   m_Layer: 0
   m_Name: pizza
   m_TagString: Junk
@@ -145,3 +146,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2481726480862255631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5462108774402465005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6449284164caca418ee09cfb38c0977, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.5
+  rotationSpeed: 5
+  lifeTime: 10

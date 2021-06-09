@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5061091773064291355}
   - component: {fileID: 933739064834502104}
   - component: {fileID: 6531023548273142499}
+  - component: {fileID: 8530463793135183924}
   m_Layer: 0
   m_Name: broccoli
   m_TagString: Vegetable
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 3624900594987020698}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.4487, y: -0.345, z: 0}
-  m_LocalScale: {x: 6.3146667, y: 3.6990147, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -99,7 +100,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -122,7 +123,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.34}
+    oldSize: {x: 1.0666667, y: 1.1333333}
     newSize: {x: 0.32, y: 0.34}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -142,3 +143,18 @@ PolygonCollider2D:
       - {x: 0.08414854, y: -0.1352481}
       - {x: 0.16485524, y: -0.020616982}
       - {x: 0.16505678, y: 0.10957241}
+--- !u!114 &8530463793135183924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3624900594987020698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6449284164caca418ee09cfb38c0977, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.5
+  rotationSpeed: 5
+  lifeTime: 10

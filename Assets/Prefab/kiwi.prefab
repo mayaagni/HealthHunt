@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4668231045510540072}
   - component: {fileID: 8412268370362980268}
   - component: {fileID: 5037653620938467001}
+  - component: {fileID: 3497157733628670596}
   m_Layer: 0
   m_Name: kiwi
   m_TagString: Fruit
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 7286484699741556376}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.7982, y: 1.6059, z: 0}
-  m_LocalScale: {x: 4.6967, y: 3.4254, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -122,7 +123,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.33, y: 0.28}
+    oldSize: {x: 1.1, y: 0.93333334}
     newSize: {x: 0.33, y: 0.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -137,3 +138,18 @@ PolygonCollider2D:
       - {x: 0.15769297, y: -0.03841719}
       - {x: 0.15560529, y: 0.038474012}
       - {x: 0.11082464, y: 0.114255905}
+--- !u!114 &3497157733628670596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7286484699741556376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6449284164caca418ee09cfb38c0977, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.5
+  rotationSpeed: 5
+  lifeTime: 10

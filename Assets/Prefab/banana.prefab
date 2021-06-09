@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1558168045190548656}
   - component: {fileID: 980566415055924538}
   - component: {fileID: 8659707081132077324}
+  - component: {fileID: 5861752607571460521}
   m_Layer: 0
   m_Name: banana
   m_TagString: Fruit
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 9106591799164303017}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.9104, y: 3.6934, z: 0}
-  m_LocalScale: {x: 6.4754, y: 4.9444, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -99,7 +100,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -122,7 +123,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.29, y: 0.3}
+    oldSize: {x: 0.96666664, y: 1}
     newSize: {x: 0.29, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -141,3 +142,18 @@ PolygonCollider2D:
       - {x: 0.10879768, y: -0.06363919}
       - {x: 0.13706745, y: -0.021042012}
       - {x: 0.14896624, y: 0.08052097}
+--- !u!114 &5861752607571460521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9106591799164303017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6449284164caca418ee09cfb38c0977, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.5
+  rotationSpeed: 5
+  lifeTime: 10

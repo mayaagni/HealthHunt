@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3177385696984833685}
   - component: {fileID: 8636132065784904218}
   - component: {fileID: 6932587209145319795}
+  - component: {fileID: 6646931898994213185}
   m_Layer: 0
   m_Name: apple
   m_TagString: Fruit
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 2285158269302167517}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.1635, y: 2.4446, z: 0}
-  m_LocalScale: {x: 5.2032, y: 4.0274, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -101,7 +102,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.31, y: 0.31}
+    oldSize: {x: 1.0333333, y: 1.0333333}
     newSize: {x: 0.31, y: 0.31}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -141,3 +142,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &6646931898994213185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2285158269302167517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6449284164caca418ee09cfb38c0977, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.5
+  rotationSpeed: 5
+  lifeTime: 10

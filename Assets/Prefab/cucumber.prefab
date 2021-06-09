@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 308097917448286784}
   - component: {fileID: 565928160002992111}
   - component: {fileID: 8179495000780936159}
+  - component: {fileID: -3952756344425171445}
   m_Layer: 0
   m_Name: cucumber
   m_TagString: Vegetable
@@ -138,3 +139,18 @@ PolygonCollider2D:
       - {x: 0.15779588, y: -0.12823546}
       - {x: 0.15593195, y: -0.06970454}
       - {x: -0.043638423, y: 0.15911782}
+--- !u!114 &-3952756344425171445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5912335740111876710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6449284164caca418ee09cfb38c0977, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.5
+  rotationSpeed: 5
+  lifeTime: 10
