@@ -79,18 +79,28 @@ public class Player : MonoBehaviour
     {
        if (col.gameObject.CompareTag("Vegetable"))
         {
+            if(speed <= 5)
+            {
+                speed = speed + .3f;
+            }
             Instantiate(star, transform.position, Quaternion.identity);
             // load the active scene again, to restard the game. The GameManager will handle this for us. We use a slight delay to see the explosion.
             vegScore++;
         }
         if (col.gameObject.CompareTag("Fruit"))
         {
+            if(speed <= 5)
+            {
+                speed = speed + .3f;
+            }
             Instantiate(star, transform.position, Quaternion.identity);
             // load the active scene again, to restard the game. The GameManager will handle this for us. We use a slight delay to see the explosion.
             fruitScore++;
         }
         if (col.gameObject.CompareTag("Junk"))
         {
+            //decrese speed when player consumes junk food
+            speed = speed - .3f;
             Instantiate(x, transform.position, Quaternion.identity);
             // load the active scene again, to restard the game. The GameManager will handle this for us. We use a slight delay to see the explosion.
             junkScore++;
@@ -98,6 +108,7 @@ public class Player : MonoBehaviour
             {
                 isDead = true;
                 Destroy(GetComponent<SpriteRenderer>());
+                
             }
         }
     }
