@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5491773593869162691}
   - component: {fileID: 1830438752956414893}
   - component: {fileID: 4844247405304890751}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Chef(1)
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 5659862740526917101}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.17, y: -2.92, z: 0}
-  m_LocalScale: {x: 7.8958, y: 7.793996, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -71,8 +71,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1198533897
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 8510366514237771793, guid: 3b670cba36d4d42c8a86bb61b25c2234, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -102,7 +102,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.13, y: 0.21}
+    oldSize: {x: 1.3, y: 2.1}
     newSize: {x: 0.13, y: 0.21}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -110,10 +110,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.065, y: 0.105}
-      - {x: -0.065, y: -0.105}
-      - {x: 0.065, y: -0.105}
-      - {x: 0.065, y: 0.105}
+    - - {x: -0.43221992, y: 0.83944035}
+      - {x: -0.54910946, y: -0.051040173}
+      - {x: -0.57910794, y: -0.9863286}
+      - {x: 0.53504175, y: -0.9863286}
+      - {x: 0.4469089, y: 0.8835068}
 --- !u!50 &1830438752956414893
 Rigidbody2D:
   serializedVersion: 4
@@ -152,3 +153,10 @@ MonoBehaviour:
   badSound: {fileID: 0}
   star: {fileID: 0}
   x: {fileID: 0}
+  walking: []
+  animationFPS: 0
+  heart: {fileID: 0}
+  heart1: {fileID: 0}
+  heart2: {fileID: 0}
+  heart3: {fileID: 0}
+  heart4: {fileID: 0}
