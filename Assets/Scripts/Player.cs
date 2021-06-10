@@ -116,10 +116,13 @@ public class Player : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
+
+       //Debug.Log("Collision: " + col.gameObject.name);
        if (col.gameObject.CompareTag("Vegetable"))
         {
-            vegScore++;
+            AudioSource.PlayClipAtPoint(goodSound, transform.position);
             Instantiate(star, transform.position, Quaternion.identity);
+            vegScore++;
             if (speed <= 7)
             {
                 speed = speed + .5f;
@@ -129,8 +132,9 @@ public class Player : MonoBehaviour
         }
         if (col.gameObject.CompareTag("Fruit"))
         {
-            fruitScore++;
+            AudioSource.PlayClipAtPoint(goodSound, transform.position);
             Instantiate(star, transform.position, Quaternion.identity);
+            fruitScore++;
             if (speed <= 7)
             {
                 speed = speed + .5f;
@@ -140,8 +144,9 @@ public class Player : MonoBehaviour
         }
         if (col.gameObject.CompareTag("Junk"))
         {
-            junkScore++;
+            AudioSource.PlayClipAtPoint(badSound, transform.position);
             Instantiate(x, transform.position, Quaternion.identity);
+            junkScore++;
             //decrese speed when player consumes junk food
             if (speed > 1)
             {
